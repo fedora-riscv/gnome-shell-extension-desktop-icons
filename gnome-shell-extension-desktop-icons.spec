@@ -3,7 +3,7 @@
 %global uuid    org.gnome.shell.extensions.%{extname}
 
 Name:           gnome-shell-extension-%{extname}
-Version:        19.10.1
+Version:        19.10.2
 Release:        1%{?dist}
 Summary:        GNOME Shell extension for providing desktop icons
 
@@ -26,7 +26,7 @@ such as launching, copy/paste, rename and deleting are supported.
 
 You can use gnome-tweaks (additional package) or run in terminal:
 
-  gnome-shell-extension-tool -e %{extid}
+  gnome-extensions enable %{extid}
 
 
 %prep
@@ -52,6 +52,9 @@ sed -e "/meson_post_install/d" -i meson.build
 
 
 %changelog
+* Sat Oct 12 2019 Artem Polishchuk <ego.cordatus@gmail.com> - 19.10.2-1
+- Update to 19.10.2
+
 * Thu Oct 03 2019 Artem Polishchuk <ego.cordatus@gmail.com> - 19.10.1-1
 - Update to 19.10.1
 
