@@ -4,7 +4,7 @@
 
 Name:           gnome-shell-extension-%{extname}
 Version:        19.10.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        GNOME Shell extension for providing desktop icons
 
 License:        GPLv3+
@@ -52,6 +52,9 @@ sed -e "/meson_post_install/d" -i meson.build
 
 
 %changelog
+* Tue Jan 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 19.10.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
 * Sat Oct 12 2019 Artem Polishchuk <ego.cordatus@gmail.com> - 19.10.2-1
 - Update to 19.10.2
 
