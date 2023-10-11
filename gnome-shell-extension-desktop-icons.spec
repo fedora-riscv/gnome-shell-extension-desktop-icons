@@ -3,8 +3,8 @@
 %global uuid    org.gnome.shell.extensions.%{extname}
 
 Name:           gnome-shell-extension-%{extname}
-Version:        20.04.0
-Release:        2%{?dist}
+Version:        20.10.0
+Release:        1.rv64%{?dist}
 Summary:        GNOME Shell extension for providing desktop icons
 
 License:        GPLv3+
@@ -53,6 +53,9 @@ sed -e "/meson_post_install/d" -i meson.build
 
 
 %changelog
+* Wed Oct 11 2023 Liu Yang <Yang.Liu.sn@gmail.com> - 20.10.0-1
+- Upgrade to upstam 20.10.0
+
 * Mon Jul 27 2020 Fedora Release Engineering <releng@fedoraproject.org> - 20.04.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
 
